@@ -1,0 +1,40 @@
+Meta:
+    Title
+    Subtitle
+    Author
+    Date
+    Tags
+    Rating
+
+Legend:
+    single layer map for document wide variables
+
+Text Mods:
+    Bold
+    Italy
+    Underline
+    Link
+
+Alert:
+    Info
+    Success
+    Warning
+    Failure/Fault
+
+List:
+    Numbered
+    Alphabetical
+    Bullet
+    Arrow
+    Plain
+
+Tree:
+    Folders/
+    Files.ext
+
+Inject- (render another tail file)
+Image- (images and gifs)
+YouTube Embed-
+Table-
+Quote Block-
+Code Block-
