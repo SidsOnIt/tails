@@ -1,0 +1,71 @@
+/// documentation syntax
+// comment syntax
+
+title: Welcome Home;;
+subtitle: an intro to rustlang..;;
+author: SidsOnIt;;
+date: 20260819;;
+tags: programming, rust;;
+rating: PG;;
+
+let legend = {
+  protag: sid
+}
+
+section: Prerequisites;;
+
+subtext: rust is not a simple:;bold:;italy' language, although it is totally
+possible to start with rust as your first language, it is only
+wise if you are someone who is willing to push 6months-1year
+seeing no results, otherwise it is recommended to have experience
+with at least 1 other intermediate to difficult type safe language.
+rust devs do not just program with rust so we will discuss other
+languages as well, if you go raw into rust you will likely give up;;
+
+-.s
+
+quote: what is the point of all this 'compute.link(site.com)' if bloat gets dibs;;
+
+alert(info): electron apps are up from 500MB, Flutter apps are 150 and ours will be less than 10;;
+
+-.s
+
+table:
+people | lili, {{protag}}, torin, john, vicki, matt, cowan
+pets   | dog, cat, fish, snake, chicken
+places | home, work, store, gas station;;
+
+code.rust:
+pub fn main() {
+  println!("fuck")
+};;
+
+-.s
+
+list(123):
++ Projects(abc)
+  + Rust.rs
+  + Dart(123)
+    + Flutter
+    + Riverpod
++ Deps(dot)
+  + Chrono(arrow)
+    + DateTime
+    + Utc
++ News;;
+
+tree:
+Root/
++ Projects/
+  + Rust.rs
+  + Dart/
+    + Flutter.rs
+    + Riverpod.rs
++ Deps/
+  + Chrono/
+    + DateTime.rs
+    + Utc.rs
++ News;;
+
+image: (src)
+youtube: (src)

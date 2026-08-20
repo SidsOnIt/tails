@@ -1,0 +1,23 @@
+Clarifications: This is intended as a solution
+for static documentation, not ephemeral notes.
+
+| Knowledge Bases | Documentation/Wiki/Blogs | Books
+
+Priorities(List):
+
+  + Productivity: Tails aims to be the easiest way to
+  professionally write documentation quickly for anything from a book to the total knowledge infrastructure of a F500 PaaS company.
+
+  + Readability of PlainText: Less inline injection, plaintext is intended to be totally usable as is for a programmer.
+
+  + Recursively Composable: -allow nested .tails rendering so many documents can be rendered as one larger .tails document, so documentation can be completely d.r.y-
+
+  + Minimum tokenization latency: tokenization
+  is inteded to be as minified as possible without losing plaintext readability.
+
+  + optional DB based documentation: non monolithic documents are intended to be able to be requested, recieved and rendered as fast as possible. In a perfect world a tls bincode request could get the string, tokenize and switch it to the correct renderer function, which should theoretically maximize possible response time.
+
+Inteded deps day 0;
+
+| Logos
+...the intent is to only use logos, handlebars may be used if {{}} injects can't be done by hand which is not something I am currently predicting.
