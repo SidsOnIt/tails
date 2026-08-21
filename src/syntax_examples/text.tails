@@ -1,0 +1,14 @@
+section: section title;;
+text: default text style for bulk copy;;
+subtext: small text;;
+
+quote: for a custom quote bubble;;
+
+---------.s
+
+section: Inline Styles;;
+text: in the bold(beginning) there way a guy
+who did the things a guy does like fix
+smthn underline(after he broken it) and then act
+like he did something italy(crazy) when really
+he just fixed what he broke;;

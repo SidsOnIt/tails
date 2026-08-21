@@ -1,0 +1,6 @@
+gray_matter => Extract Variables from Content Body
+handlebars => interpolate Variables into content
+
+Rust STD => find all injects and render them recursivley and inject them inline
+
+pulldown_cmark (pass 2) tokenize full aggregate document for rendering
