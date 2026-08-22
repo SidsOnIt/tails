@@ -1,8 +1,10 @@
+!! In scratch phase, do not use until ver1.0.0 unless you want to help build it, Apis and features will change rapidly
+
 # tails
 a files for all your tales ;;
 
 Planned Targets are: [Linux, Windows, macOS, Android, iOS and WASM]
-> This is not compatible with no_std environments or classical web.
+> This is not compatible with no_std environments or classical web at the moment and isn't currently planned, not to say that wont be adapted later.
 
 Concrete Goals:
 .tails files should support the entire markdown standard but bring ergonomic expression alternatives, and extra 
