@@ -12,6 +12,14 @@ dependencies = [
 ]
 
 [[package]]
+name = "codescode"
+version = "0.1.0"
+source = "git+https://github.com/SidsOnIt/codescode#d9b54dbe4e54906cf8679a66ca6ee2ed5880340e"
+dependencies = [
+ "logos",
+]
+
+[[package]]
 name = "equivalent"
 version = "1.0.2"
 source = "registry+https://github.com/rust-lang/crates.io-index"
@@ -127,6 +135,7 @@ dependencies = [
 name = "tails"
 version = "0.1.0"
 dependencies = [
+ "codescode",
  "indexmap",
  "logos",
 ]
