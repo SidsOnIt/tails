@@ -1,27 +1,16 @@
-!! In scratch phase, do not use until ver1.0.0 unless you want to help build it, Apis and features will change rapidly
+!! In scratch phase, dependent on my other project codescode, I will be able to move forward with this once that is v1.
 
 # tails
-a files for all your tales ;;
-
-Planned Targets are: [Linux, Windows, macOS, Android, iOS and WASM]
-> This is not compatible with no_std environments or classical web at the moment and isn't currently planned, not to say that wont be adapted later.
 
 Concrete Goals:
-.tails files should support the entire markdown standard but bring ergonomic expression alternatives, and extra 
-tooling, this enables 0 migration friction with immediate unlock of new features using pulldown-cmark
-.tails files should front matter variable injection to further keep individual files d.r.y. using greymatter
-.tails files should be able to inject all other .tails and .md files inline so end users can have true single sources of truth
-.tails files should return an actionable token array.
-.tails should include dumb syntax tokenization for syntax highlighting using logos via simple common grammar matching.
-.tails documents should be completely json serializable and deserializable
-a cli file combinator tool so the standard is functional by itself without any gui or framework, that tool will be mit and a self-provided
-insurance that your access CANNOT ever be taken away.
+> support markdown core, github flavor syntax
+> add tails alternatives for above
+> add additional tails syntax
+> front matter meta and variables (only per file context planned atm for 1.0)
+> document compiler, inline content from multiple documents
+> build a cli tool that brings features to every lang via json, but can likewise be used in the terminal
 
-Potential Future Goals:
-> supporting other langs, serde can turn the entire mother type into json so theoretically you just rebuild the ast in the
-native language types.
-> charts
-> iframes
+These are just the 1.0 goals, more features are in mind
 
 --at the current state, api's are completely in the air and may change multiple times a day-- when an api is becoming concrete, that api will be documented here--
 
