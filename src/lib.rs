@@ -1,10 +1,8 @@
 pub mod document;
-pub mod meta;
 pub mod types;
 
 // Re-export core types for clean library ergonomics
 pub use document::Document;
-pub use meta::DocumentMeta;
 pub use types::*;
 
 #[cfg(test)]
@@ -15,10 +13,14 @@ mod tests {
     #[test]
     fn test_index_tails_pipeline() {
         let manifest_dir = env!("CARGO_MANIFEST_DIR");
-        let src_dir = Path::new(manifest_dir).join("src");
 
-        let raw_file = include_str!("index.tails");
-        let doc = Document::from_raw_recursive(raw_file, Some(&src_dir));
+        // Point base_dir directly to src/test_docs where index, overview, and footer live!
+        let docs_dir = Path::new(manifest_dir).join("src").join("test_docs");
+
+        let raw_file = std::fs::read_to_string(docs_dir.join("index.tails"))
+            .expect("Failed to read index.tails from src/test_docs/");
+
+        let doc = Document::from_raw_recursive(&raw_file, Some(&docs_dir));
 
         println!("\n==================== META ====================");
         println!("{:#?}", doc.meta);
