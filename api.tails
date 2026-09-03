@@ -1,0 +1,97 @@
+---
+title: System Architecture & Docs
+subtitle: Ultra-Performant Engine Guide
+author: SidsOnIt
+date: 20261015
+rating: PG
+tags:
+  - architecture
+  - performance
+variables:
+  engine_name: Tails
+  memory_limit: 10MB
+  repo_url: https://github.com/example/tails
+---
+
+line.s
+line.m
+line.l
+
+title: content ;;
+subtitle: content ;;
+section: content ;;
+text: content ;;
+subtext: content ;;
+quote: content ;;
+
+alert.info: content ;;
+alert.warning: content ;;
+alert.failure: content ;;
+alert.success: content ;;
+
+photo: url ;;
+youtube: video_id ;;
+html: html ;;
+embed: raw_iframe ;;
+button: url ;;
+
+
+code: rust
+fn main(){
+	println!("hello")
+}
+;;
+
+text: NOTE: code blocks require the ;; terminator be at the end on its own line,
+this is because a handful of langs use ;;.
+
+include: file_location ;;
+
+list: Architecture & Task Lists
+  * Arrow Items
+    -> Zero-copy memory access
+    -> SIMD line scanning
+  * 123 Items
+    1 Parse front-matter
+    2 Interpolate variables
+    3 Lex body tokens
+  * Abc Items
+    A Core Rust Parser
+    B Terminal Renderer
+  * Checkbox Items
+    [ ] Complete Logos lexer pass
+    [ ] Verify circular inclusion protection
+      # remember to run integration test suite
+;;
+
+tree: Vault Root
+
+  Core/
+    Parser/
+      meta.rs
+      lexer.rs
+    Renderer/
+      terminal.rs
+      web.rs
+
+  Assets/
+    diagram.png
+    schema.json
+;;
+
+expandable:
+  title = How to run parser tests
+  content = cargo test --test parser_spec
+;;
+
+table:
+teams   | core, backend, frontend
+status  | Production Ready, active, pending
+latency | sub-ms, 1ms, 2ms
+;;
+
+
+text: this is an example of rich text here is {bold}.b, {italic}.i, {underline}.u, {strikethrough}.s,
+if you look above you will see is as {content}.modifiers, so if i wanted to do multiple at a time I could
+make {text that is bold, italic and underlined and striked}.bius order of mods doesnt matter.
+;;
