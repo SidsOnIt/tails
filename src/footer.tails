@@ -1,0 +1,21 @@
+---
+title: Document Footer
+author: Automation Bot
+date: 20261017
+variables:
+  license: MIT
+  version: v1.0.0
+---
+
+section: Media & Actions;;
+
+image: assets/architecture_diagram.png ;;
+youtube: dqw4w9wgxcq ;;
+embed: <iframe src="https://example.com/status"></iframe> ;;
+html: <div class="badge">Engine Status: OK</div> ;;
+
+button: {{repo_url}} ;;
+
+space.m
+
+subtext: Document compiled using {{engine_name}} {{version}} under {{license}} license;;

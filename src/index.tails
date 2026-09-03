@@ -1,0 +1,41 @@
+---
+title: System Architecture & Docs
+subtitle: Ultra-Performant Engine Guide
+author: SidsOnIt
+date: 20261015
+rating: PG
+tags:
+  - architecture
+  - performance
+variables:
+  engine_name: Tails
+  memory_limit: 10MB
+  repo_url: https://github.com/example/tails
+---
+
+title: {{title}};;
+subtitle: {{subtitle}};;
+subtext: Primary specification compiled by {{author}} on {{date}};;
+
+section: Architecture Summary;;
+
+subtext: The {parent document}.b initializes global parameters for {{engine_name}}. Below, sub-modules are fetched dynamically via recursive file inclusion;;
+
+line.m
+
+alert.info: Primary process targeted under {{memory_limit}} RAM footprint;;
+
+quote: Fast software is built on deterministic single-pass engines without bloat;;
+
+code.rust:
+pub fn main() {
+    println!("Initializing engine...");
+};;
+
+line.s
+
+inline_page: overview.tails ;;
+
+line.m
+
+inline_page: footer.tails ;;

@@ -1,0 +1,71 @@
+
+---
+title: Engine Core Overview
+subtitle: Feature Spec & Structures
+author: Core Team
+date: 20261016
+rating: PG
+tags:
+  - deep-dive
+  - parsing
+variables:
+  module_status: Production Ready
+  target_fps: 60
+---
+
+section: Sub-Module Specs;;
+
+subtext: This module tests {inline bold}.b, {italic styles}.i, {underlines}.u, {strikethroughs}.s, and {external links}.link(https://rust-lang.org);;
+
+a. title: Feature Quick Look ;;
+b. subtitle: Component Hierarchy ;;
+c. section: Deep Dive Notes ;;
+d. text: Standard text payload ;;
+e. subtext: Secondary text payload ;;
+
+alert.warn: Verify buffer allocations before executing heavy string routines ;;
+alert.fail: Connection timeout on fallback network nodes ;;
+alert.success: Sub-module loaded with status: {{module_status}} ;;
+
+list: Architecture & Task Lists
+  * Arrow Items
+    -> Zero-copy memory access
+    -> SIMD line scanning
+  * 123 Items
+    1 Parse front-matter
+    2 Interpolate variables
+    3 Lex body tokens
+  * Abc Items
+    A Core Rust Parser
+    B Terminal Renderer
+  * Checkbox Items
+    [ ] Complete Logos lexer pass
+    [_] Verify circular inclusion protection
+      # remember to run integration test suite
+;;
+
+tree: Vault Root
+
+  Core/
+    Parser/
+      meta.rs
+      lexer.rs
+    Renderer/
+      terminal.rs
+      web.rs
+
+  Assets/
+    diagram.png
+    schema.json
+;;
+
+expandable:
+  title = How to run parser tests
+  content = cargo test --test parser_spec
+;;
+
+table:
+teams   | core, backend, frontend
+status  | {{module_status}}, active, pending
+latency | sub-ms, 1ms, 2ms
+;;
