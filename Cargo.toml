@@ -5,5 +5,8 @@ edition = "2024"
 
 [dependencies]
 codescode = {git = "https://github.com/SidsOnIt/codescode"}
+gray_matter = "0.3.2"
 indexmap = "2.14.0"
 logos = "0.16.1"
+serde = { version = "1.0.229", features = ["derive"] }
+serde_yml = "0.0.13"
